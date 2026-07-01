@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kokoro Connect — Coming Soon</title>
+  <meta name="description" content="Kokoro Connect — a shared space for you and your lover. Something quiet and beautiful is being built for two. Launching soon." />
+  <meta name="theme-color" content="#0b0910" />
+
+  <meta property="og:title" content="Kokoro Connect — Coming Soon" />
+  <meta property="og:description" content="A shared space for you and your lover. Launching soon." />
+  <meta property="og:image" content="https://kokoronapp.com/assets/og-image-base.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kokoronapp.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Cinzel:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Subsetted to just the kanji used (心) so it renders reliably regardless of the visitor's system fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&text=%E5%BF%83&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <canvas id="sky"></canvas>
+  <div class="glow-blob blob-a"></div>
+  <div class="glow-blob blob-b"></div>
+  <div class="glow-blob blob-c"></div>
+  <div class="grain"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <main class="stage">
+    <div class="kanji" aria-hidden="true">心</div>
+
+    <div class="content">
+      <p class="eyebrow reveal" style="--d:0s">Introducing</p>
+
+      <div class="emblem-wrap reveal" style="--d:0.15s">
+        <div class="emblem-halo"></div>
+        <picture>
+          <source srcset="assets/kokoro-emblem.webp" type="image/webp" />
+          <img src="assets/kokoro-emblem.png" alt="Kokoro Connect emblem — two interlocking rings" class="emblem" width="900" height="684" />
+        </picture>
+      </div>
+
+      <h1 class="title reveal" style="--d:0.3s">Kokoro Connect</h1>
+      <p class="tagline reveal" style="--d:0.45s">A shared space for you and your lover</p>
+
+      <div class="divider reveal" style="--d:0.55s"><span></span><i></i><span></span></div>
+
+      <div class="badge reveal" style="--d:0.65s">
+        <span class="badge-dot"></span>
+        <span>Coming Soon</span>
+      </div>
+
+      <p class="teaser reveal" style="--d:0.8s">
+        Somewhere between two hearts, something quiet is being written —
+        a private world made only for two. <em>It's almost time.</em>
+      </p>
+
+      <form class="notify reveal" id="notifyForm" style="--d:0.95s">
+        <input type="email" id="notifyEmail" placeholder="Your email" required autocomplete="email" aria-label="Email address" />
+        <button type="submit">
+          <span class="btn-text">Notify Me</span>
+        </button>
+      </form>
+      <p class="notify-success" id="notifySuccess" aria-live="polite">You're on the list. We'll whisper when it's time. 🤍</p>
+
+      <p class="footnote reveal" style="--d:1.05s">© 2026 Kokoro Connect · kokoronapp.com</p>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
