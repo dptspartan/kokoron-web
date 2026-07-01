@@ -27,7 +27,7 @@ kokoron/
 │   ├── favicon-32.png
 │   ├── apple-touch-icon.png
 │   └── og-image-base.png          # social share preview
-├── CNAME                          # kokoronapp.com (GitHub Pages custom domain)
+├── CNAME                          # kokonapp.com (GitHub Pages custom domain)
 └── README.md
 ```
 
@@ -41,13 +41,13 @@ python3 -m http.server 8000
 # visit http://localhost:8000
 ```
 
-## 🌐 Deploying to GitHub Pages with kokoronapp.com
+## 🌐 Deploying to GitHub Pages with kokonapp.com
 
 1. Create a GitHub repo (e.g. `kokoron-website`) and push this folder's contents to the `main` branch.
 2. In the repo, go to **Settings → Pages**.
 3. Under **Build and deployment**, set source to **Deploy from a branch**, branch `main`, folder `/ (root)`.
-4. Under **Custom domain**, enter `kokoronapp.com` and save (this repo already includes a `CNAME` file, so GitHub should pick it up automatically — verify it matches).
-5. At your domain registrar / DNS provider for `kokoronapp.com`, add:
+4. Under **Custom domain**, enter `kokonapp.com` and save (this repo already includes a `CNAME` file, so GitHub should pick it up automatically — verify it matches).
+5. At your domain registrar / DNS provider for `kokonapp.com`, add:
    - An **A** record for the apex domain (`@`) pointing to GitHub Pages' IPs:
      - `185.199.108.153`
      - `185.199.109.153`
